@@ -1,15 +1,16 @@
-const eqArrays = function(arr1, arr2){
+const eqArrays = function(arr1, arr2) {
   let result = true;
-  if(arr1.length === arr2.length){
-    for(let i = 0; i < arr1.length; i++){
-      if(arr1[i] !== arr2[i]){
+  if (arr1.length === arr2.length) {
+    for (let i = 0; i < arr1.length; i++) {
+      if (arr1[i] !== arr2[i]) {
         result = false;
         break;
       }
     }
-  } 
+  }
   return result;
 };
+
 
 const assertArraysEqual = function(arr1, arr2, expected) {
   if (eqArrays(arr1, arr2) === expected) {
@@ -19,14 +20,15 @@ const assertArraysEqual = function(arr1, arr2, expected) {
   }
 };
 
-const without = function(arr, itemsToRemove){
+const without = function(arr, itemsToRemove) {
   let newArr = [...arr]; //deep clone
-  for(let i = 0; i < newArr.length; i++){
-    for(let j = 0; j < itemsToRemove.length; j++)
-    if(arr[i] === itemsToRemove[j]){
-      arr.splice(i, 1);
-      console.log(arr.length);
-      console.log(newArr.length);
+  for (let i = 0; i < newArr.length; i++) {
+    for (let j = 0; j < itemsToRemove.length; j++) {
+      if (arr[i] === itemsToRemove[j]) {
+        arr.splice(i, 1);
+        console.log(arr.length);
+        console.log(newArr.length);
+      }
     }
   }
   return arr;
