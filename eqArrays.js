@@ -8,8 +8,8 @@ const assertEqual = function(actual, expected) {
 };
 
 // TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1, 1);
 
 //eqArray Function
 
@@ -22,9 +22,12 @@ const eqArrays = function(arr1, arr2) {
         break;
       }
     }
+  } else {
+    result = false;
   }
   return result;
 };
+
 
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
