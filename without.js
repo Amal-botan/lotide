@@ -30,8 +30,9 @@ const without = function(arr, itemsToRemove) {
         // console.log(newArr.length);
       }
     }
+  
+    return arr;
   }
-  return arr;
 };
 
 // TEST CODE
