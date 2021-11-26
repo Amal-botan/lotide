@@ -7,9 +7,12 @@ const eqArrays = function(arr1, arr2) {
         break;
       }
     }
+  } else {
+    result = false;
   }
   return result;
 };
+
 
 
 const assertArraysEqual = function(arr1, arr2, expected) {
