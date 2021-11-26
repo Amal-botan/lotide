@@ -15,7 +15,7 @@ const eqArrays = function(arr1, arr2) {
 
 
 
-const assertArraysEqual = function(arr1, arr2, expected) { 
+const assertArraysEqual = function(arr1, arr2, expected) {
   if (eqArrays(arr1, arr2) === expected) {
     console.log(`✅✅✅ Assertion Passed: ${eqArrays(arr1, arr2)} === ${expected}`);
   } else {
@@ -38,7 +38,7 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
   return results;
-}
+};
 
 const words = ["ground", "control", "to", "major", "tom"];
 const words1 = ["happy", "sad", "confused", "joyful", "upset"];
