@@ -1,7 +1,8 @@
 const assertEqual = require('./assertEqual');
 
 const tail = function(arr) {
-  return (arr.slice(0));
+  let tailArr = arr.slice(1);
+  return tailArr;
 };
 
 
@@ -13,5 +14,6 @@ const tail = function(arr) {
 // tail(words); // no need to capture the return value since we are not checking it
 // assertEqual(words.length, 3); // original array should still have 3 elements!
 
+console.log(tail(["Amal","Botan","Abdulkadir"]));
 
 module.exports = tail;
